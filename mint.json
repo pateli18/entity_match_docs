@@ -1,78 +1,52 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Entity Matcher",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/entity_match_logo.png",
+    "light": "/logo/entity_match_logo.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/entity_match_logo.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#41c8d0",
+    "light": "#41c8d0",
+    "dark": "#41c8d0",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#41c8d0",
+      "to": "#fb5672"
     }
   },
+  "openapi": "https://www.entitymatcher.com/api/v1/openapi.json",
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:ihsaan@pandan.ai"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "App",
+    "url": "https://www.entitymatcher.com"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "pages": ["quickstart"]
     },
     {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/introduction"]
-    },
-    {
-      "group": "Endpoint Examples",
+      "group": "Dataset Endpoints",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/dataset/get-datasets",
+        "api-reference/dataset/upsert-dataset"
+      ]
+    },
+    {
+      "group": "Match Endpoints",
+      "pages": [
+        "api-reference/match/get-all-matches",
+        "api-reference/match/get-match-jobs",
+        "api-reference/match/get-match-job-status",
+        "api-reference/match/match-records",
+        "api-reference/match/start-match-job"
       ]
     }
-  ],
-  "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
+  ]
 }
