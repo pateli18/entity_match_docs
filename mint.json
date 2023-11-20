@@ -29,7 +29,7 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["quickstart"]
+      "pages": ["quickstart_API", "quickstart_App", "quickstart_GoogleSheet"]  
     },
     {
       "group": "Dataset Endpoints",
