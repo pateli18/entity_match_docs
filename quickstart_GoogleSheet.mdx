@@ -51,7 +51,7 @@ Paste in your API Key and click `Ok`.
 If all the data that you want is in the same worksheet, use the `=ENTITYMATCH` custom formula. Here's an example formula:
 
 ```
-=ENTITYMATCH(A1:E51,"id", google!A1:E44, "id", "test_google_sheets_matching", True)
+=ENTITYMATCH(A1:E51,"id", google!A1:E44, "id", "test_google_sheets_matching")
 ```
 
 - The first parameter covers the `base_dataset` which is the dataset with every record that you want to be matched
@@ -59,7 +59,6 @@ If all the data that you want is in the same worksheet, use the `=ENTITYMATCH` c
 - The third parameter covers the `match_dataset` which is the dataset with the records that you want to match against the `base_dataset`. This can be the same as the `base_dataset` if you are, for example, trying to de-duplicate the dataset
 - The fourth parameter is the `match_id_column` which is the column in the `match_dataset` that contains the unique identifier for each record
 - The fifth parameter is the `match_job_name` which is the name of the match job that you want to use. This should be unique within the work sheet if you are using multiple match jobs
-- The sixth parameter is an **optional** parameter that is by default `False`. Set it to `True` to receive an email when the match job is complete
 
 <Warning>For the `base_dataset` and `match_dataset`, select the entire datasets and not the individual rows</Warning>
 
