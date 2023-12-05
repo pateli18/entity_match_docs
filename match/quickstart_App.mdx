@@ -1,0 +1,23 @@
+---
+title: 'Application'
+description: 'Start matching entities in under 5 minutes using our no-code UI'
+---
+
+### 1. Create a Dataset
+
+<Info>If you want to match between two datasets, make sure to create both datasets</Info>
+
+<Snippet file="app-create-dataset.mdx" />
+
+### 2. Start a Match Job
+
+<Snippet file="app-start-job.mdx" />
+Make sure to select `Match` as your **Job Type**.
+
+<Info>The `Base Dataset` and `Match Dataset` can be the same if you want to match records within an existing dataset, otherwise, for every record in the `Base Dataset` the system will try to match any record from the `Match Dataset`.</Info>
+
+<Snippet file="app-job-progress.mdx" />
+
+### 3. Exporting Your Matches
+
+Once the match job is complete, you can click the `Export Data` button to get the corresponding `base_dataset_id` and `match_dataset_id` values in a CSV file. If there was no match, the `match_dataset_id` will be blank.

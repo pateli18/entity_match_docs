@@ -1,0 +1,26 @@
+---
+title: 'API' 
+description: 'Start matching entities in under 5 minutes using our REST API'
+---
+
+### 1. Get Your API Key
+
+<Snippet file="api-key.mdx" />
+
+### 2. Create a Dataset
+
+<Snippet file="api-create-dataset.mdx" />
+
+<Info>If you want to match between two datasets, make sure to create both datasets and make a note of both of their `dataset_ids`</Info>
+
+### 3. Start a Match Job
+
+Once your datasets have been created, it's time to kick off a match job. You can do that with the [Start Match Job](/api-reference/match/start-match-job) endpoint. Because you are creating a new match job, be sure to pass in the `base_dataset_id`, `match_dataset_id`, and `name` parameters in the body. 
+
+<Info>The `base_dataset` and `match_dataset` can be the same if you want to match records within an existing dataset, otherwise, for every record in the `base_dataset` the system will try to match any record from the `match_dataset`.</Info>
+
+Since matching can take a while, the system will return a response that contains the `job_id`, which you can then use to poll for the status of the job with the [Get Match Job Status](/api-reference/match/get-match-job-status) endpoint. Alternatively you can pass in a `callback_url` to the [Start Match Job](/api-reference/match/start-match-job) request and the system will `POST` a request there once it is complete.
+
+### 4. Retrieving Your Matches
+
+Once a match job is complete, you can call the [Get All Matches](/api-reference/match/get-all-matches) endpoint with the `job_id` from the previous step.

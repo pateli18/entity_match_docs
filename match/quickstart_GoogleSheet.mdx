@@ -1,0 +1,29 @@
+---
+title: 'Google Sheets'
+description: 'Start matching entities in under 5 minutes using Google Sheets'
+---
+<Snippet file="gs-setup.mdx" />
+
+### 4. Start a Match Job
+
+If all the data that you want is in the same worksheet, use the `=ENTITYMATCH` custom formula. Here's an example formula:
+
+```
+=ENTITYMATCH(A1:E51,"id", google!A1:E44, "id", "test_google_sheets_matching")
+```
+
+- The first parameter covers the `base_dataset` which is the dataset with every record that you want to be matched. This should be a range of cells
+- The second parameter is the `base_id_column` which is the column in the `base_dataset` that contains the unique identifier for each record. This should be a value, not a cell
+- The third parameter covers the `match_dataset` which is the dataset with the records that you want to match against the `base_dataset`. This can be the same as the `base_dataset` if you are, for example, trying to de-duplicate the dataset. Thisb should be a range of cells
+- The fourth parameter is the `match_id_column` which is the column in the `match_dataset` that contains the unique identifier for each record. This should be a value, not a cell
+- The fifth parameter is the `match_job_name` which is the name of the match job that you want to use. This should be unique within the worksheet if you are using multiple match jobs
+
+<Warning>For the `base_dataset` and `match_dataset`, select the entire datasets and not the individual rows</Warning>
+
+Once you press enter, the relevant cells will be populated with `Loading...`
+
+<Frame caption="ENTITYMATCH formula">
+  <img src="/screenshots/gsheets/job_match_formula.png" alt="ENTITYMATCH formula" />
+</Frame>
+
+<Snippet file="gs-refresh-values.mdx" />

@@ -1,0 +1,28 @@
+---
+title: 'Google Sheets'
+description: 'Start transforming records in under 5 minutes using Google Sheets'
+---
+<Snippet file="gs-setup.mdx" />
+
+### 4. Start a Transform Job
+
+If all the data that you want is in the same worksheet, use the `=ENTITYTRANSFORM` custom formula. Here's an example formula:
+
+```
+=ENTITYTRANSFORM(A1:E44, "id", "get the vendor and indicate whether the product is software or not, two separate fields", "plugin-transform-test-v1")
+```
+
+- The first parameter covers the `dataset` which is the dataset with every record that you want to be transformed. This should be a range of cells
+- The second parameter is the `id_column` which is the column in the `dataset` that contains the unique identifier for each record. This should be a value, not a cell
+- The third parameter covers the `user_instructions` which is the instructions that are passed to the application describing the transformation that you want to perform. This should be a value, not a cell
+- The fourth parameter is the `transform_job_name` which is the name of the transform job that you want to use. This should be unique within the worksheet if you are using multiple transform jobs
+
+<Warning>For the `dataset`, select the entire datasets and not the individual rows</Warning>
+
+Once you press enter, the relevant cells will be populated with `Loading...`
+
+<Frame caption="ENTITYTRANSFORM formula">
+  <img src="/screenshots/gsheets/job_transform_formula.png" alt="ENTITYTRANSFORM formula" />
+</Frame>
+
+<Snippet file="gs-refresh-values.mdx" />
