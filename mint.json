@@ -15,7 +15,7 @@
       "to": "#fb5672"
     }
   },
-  "openapi": "https://www.entitymatcher.com/api/v1/openapi.json",
+  "openapi": "https://app.entitymatcher.com/api/v1/openapi.json",
   "topbarLinks": [
     {
       "name": "Support",
