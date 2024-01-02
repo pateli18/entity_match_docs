@@ -32,6 +32,10 @@
       "pages": ["documentation/quickstart"]  
     },
     {
+      "group": "Tutorials",
+      "pages": ["tutorials/qualitative_data_coding"]
+    },
+    {
       "group": "Match",
       "pages": [
         "documentation/match/overview",
