@@ -1,0 +1,35 @@
+---
+title: 'Qualitative Data Coding'
+description: 'Automatically code your qualitative data'
+---
+
+### 1. Create a Dataset
+
+<Snippet file="app-create-dataset.mdx" />
+
+Your dataset should only include the fields relevant for coding (this can be multiple fields), you can either edit the dataset before uploading or select the specific fields in the `Advanced Settings` section of the upload form.
+
+<Frame caption="Select fields">
+  <img src="/screenshots/app/dataset_fields.png" alt="Select specific fields from the dataset" />
+</Frame>
+
+### 2. Start a Categorization Job
+
+<Snippet file="app-start-job.mdx" />
+
+<Frame caption="Start Categorize Job">
+  <img src="/screenshots/app/categorize_job.png" alt="Start a categorize job" />
+</Frame>
+
+1. Select `New Job`
+1. Select `Categorize`
+1. Enter a name for your job - this can be anything you want
+2. Select the `dataset` you added in the previous step from the dropdown
+3. Enter the specific codes for your job in the `Categories` field. You can enter multiple codes at once by separating them with a `|` character.
+4. If you want to give the app specific guidance, click the `Advanced Settings` button and enter them into the `Instructions` box. While not strictly necessary, this can help guide the app to code your data more accurately.
+
+### 3. Exporting Your Codes
+
+<Snippet file="app-job-progress.mdx" />
+
+Once the categorize job is complete, you can click the `Export Data` button to get the corresponding code values in a CSV file.
