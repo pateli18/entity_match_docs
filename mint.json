@@ -105,7 +105,8 @@
       "pages": [
         "api-reference/dataset/get-datasets",
         "api-reference/dataset/upsert-dataset",
-        "api-reference/job/get-jobs"
+        "api-reference/job/get-jobs",
+        "api-reference/job/cancel-job"
       ]
     }
   ]
