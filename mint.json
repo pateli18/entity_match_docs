@@ -29,27 +29,27 @@
   "navigation": [
     {
       "group": "Getting Started",
-      "pages": ["quickstart"]  
+      "pages": ["documentation/quickstart"]  
     },
     {
       "group": "Match",
       "pages": [
-        "match/overview",
+        "documentation/match/overview",
         {
           "group": "Match Quickstarts",
           "pages": [
-            "match/quickstart_API",
-            "match/quickstart_App",
-            "match/quickstart_GoogleSheet"
+            "documentation/match/quickstart_API",
+            "documentation/match/quickstart_App",
+            "documentation/match/quickstart_GoogleSheet"
           ]
         },
         {
           "group": "Endpoints",
           "pages": [
-            "api-reference/match/get-all-matches",
-            "api-reference/match/get-match-job-status",
-            "api-reference/match/get-single-match-job",
-            "api-reference/match/start-match-job"
+            "documentation/api-reference/match/get-all-matches",
+            "documentation/api-reference/match/get-match-job-status",
+            "documentation/api-reference/match/get-single-match-job",
+            "documentation/api-reference/match/start-match-job"
           ]
         }
       ]
@@ -57,22 +57,22 @@
     {
       "group": "Transform",
       "pages": [
-        "transform/overview",
+        "documentation/transform/overview",
         {
           "group": "Transform Quickstarts",
           "pages": [
-            "transform/quickstart_API",
-            "transform/quickstart_App",
-            "transform/quickstart_GoogleSheet"
+            "documentation/transform/quickstart_API",
+            "documentation/transform/quickstart_App",
+            "documentation/transform/quickstart_GoogleSheet"
           ]
         },
         {
           "group": "Endpoints",
           "pages": [
-            "api-reference/transform/get-all-transforms",
-            "api-reference/transform/get-transform-job-status",
-            "api-reference/transform/get-single-transform-job",
-            "api-reference/transform/start-transform-job"
+            "documentation/api-reference/transform/get-all-transforms",
+            "documentation/api-reference/transform/get-transform-job-status",
+            "documentation/api-reference/transform/get-single-transform-job",
+            "documentation/api-reference/transform/start-transform-job"
           ]
         }
       ]
@@ -80,22 +80,22 @@
     {
       "group": "Categorize",
       "pages": [
-        "categorize/overview",
+        "documentation/categorize/overview",
         {
           "group": "Categorize Quickstarts",
           "pages": [
-            "categorize/quickstart_API",
-            "categorize/quickstart_App",
-            "categorize/quickstart_GoogleSheet"
+            "documentation/categorize/quickstart_API",
+            "documentation/categorize/quickstart_App",
+            "documentation/categorize/quickstart_GoogleSheet"
           ]
         },
         {
           "group": "Endpoints",
           "pages": [
-            "api-reference/categorize/get-all-categories",
-            "api-reference/categorize/get-categorize-job-status",
-            "api-reference/categorize/get-single-categorize-job",
-            "api-reference/categorize/start-categorize-job"
+            "documentation/api-reference/categorize/get-all-categories",
+            "documentation/api-reference/categorize/get-categorize-job-status",
+            "documentation/api-reference/categorize/get-single-categorize-job",
+            "documentation/api-reference/categorize/start-categorize-job"
           ]
         }
       ]
@@ -103,10 +103,10 @@
     {
       "group": "Other API Endpoints",
       "pages": [
-        "api-reference/dataset/get-datasets",
-        "api-reference/dataset/upsert-dataset",
-        "api-reference/job/get-jobs",
-        "api-reference/job/cancel-job"
+        "documentation/api-reference/dataset/get-datasets",
+        "documentation/api-reference/dataset/upsert-dataset",
+        "documentation/api-reference/job/get-jobs",
+        "documentation/api-reference/job/cancel-job"
       ]
     }
   ]
