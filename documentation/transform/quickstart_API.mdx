@@ -13,10 +13,10 @@ description: 'Start transforming records in under 5 minutes using our REST API'
 
 ### 3. Start a Transform Job
 
-Once your dataset has been created, it's time to kick off a transform job. You can do that with the [Start Transform Job](/api-reference/transform/start-transform-job) endpoint. Because you are creating a new transform job, be sure to pass in the `dataset_id`, `name`, and `user_instructions` parameters in the body. 
+Once your dataset has been created, it's time to kick off a transform job. You can do that with the [Start Transform Job](/documents/api-reference/transform/start-transform-job) endpoint. Because you are creating a new transform job, be sure to pass in the `dataset_id`, `name`, and `user_instructions` parameters in the body. 
 
-Since transforming can take a while, the system will return a response that contains the `job_id`, which you can then use to poll for the status of the job with the [Get Transform Job Status](/api-reference/transform/get-transform-job-status) endpoint. Alternatively you can pass in a `callback_url` to the [Start Transform Job](/api-reference/transform/start-transform-job) request and the system will `POST` a request there once it is complete.
+Since transforming can take a while, the system will return a response that contains the `job_id`, which you can then use to poll for the status of the job with the [Get Transform Job Status](/documents/api-reference/transform/get-transform-job-status) endpoint. Alternatively you can pass in a `callback_url` to the [Start Transform Job](/documents/api-reference/transform/start-transform-job) request and the system will `POST` a request there once it is complete.
 
 ### 4. Retrieving Your Transformations
 
-Once a transform job is complete, you can call the [Get All Transforms](/api-reference/transform/get-all-transforms) endpoint with the `job_id` from the previous step.
+Once a transform job is complete, you can call the [Get All Transforms](/documents/api-reference/transform/get-all-transforms) endpoint with the `job_id` from the previous step.

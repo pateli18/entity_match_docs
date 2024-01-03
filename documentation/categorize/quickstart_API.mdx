@@ -13,10 +13,10 @@ description: 'Start categorizing records in under 5 minutes using our REST API'
 
 ### 3. Start a Categorize Job
 
-Once your dataset has been created, it's time to kick off a categorize job. You can do that with the [Start Categorize Job](/api-reference/categorize/start-categorize-job) endpoint. Because you are creating a new categorize job, be sure to pass in the `dataset_id`, `name`, and `categories` parameters in the body. 
+Once your dataset has been created, it's time to kick off a categorize job. You can do that with the [Start Categorize Job](/documents/api-reference/categorize/start-categorize-job) endpoint. Because you are creating a new categorize job, be sure to pass in the `dataset_id`, `name`, and `categories` parameters in the body. 
 
-Since categorizing can take a while, the system will return a response that contains the `job_id`, which you can then use to poll for the status of the job with the [Get Categorize Job Status](/api-reference/categorize/get-categorize-job-status) endpoint. Alternatively you can pass in a `callback_url` to the [Start Categorize Job](/api-reference/categorize/start-categorize-job) request and the system will `POST` a request there once it is complete.
+Since categorizing can take a while, the system will return a response that contains the `job_id`, which you can then use to poll for the status of the job with the [Get Categorize Job Status](/documents/api-reference/categorize/get-categorize-job-status) endpoint. Alternatively you can pass in a `callback_url` to the [Start Categorize Job](/documents/api-reference/categorize/start-categorize-job) request and the system will `POST` a request there once it is complete.
 
 ### 4. Retrieving Your Categorizations
 
-Once a categorize job is complete, you can call the [Get All Categories](/api-reference/categorize/get-all-categories) endpoint with the `job_id` from the previous step.
+Once a categorize job is complete, you can call the [Get All Categories](/documents/api-reference/categorize/get-all-categories) endpoint with the `job_id` from the previous step.
