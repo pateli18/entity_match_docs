@@ -1,0 +1,19 @@
+When retrieving results with the api, the response will be paginated. Here's an example of how you can handle that in python to retrieve all of the results:
+
+```python
+import requests
+
+page = 1
+data = []
+while page is not None:
+    response = requests.get(
+        f"https://app.entitymatcher.com/api/v1/{job_type}/all/{job_id}?page={page}",
+        headers={"Authorization": "Bearer xxxxx"},
+    )
+    response.raise_for_status()
+    response = response.json()
+    page += 1
+    data.extend(response['results'])
+    if page > response['pagination']['total_pages']:
+        page = None
+```
