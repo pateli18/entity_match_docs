@@ -109,7 +109,7 @@
       "pages": [
         "documentation/api-reference/dataset/get-datasets",
         "documentation/api-reference/dataset/upsert-dataset",
-        "documentation/api-reference/job/delete-dataset",
+        "documentation/api-reference/delete/delete-dataset",
         "documentation/api-reference/job/get-jobs",
         "documentation/api-reference/job/get-job-by-id",
         "documentation/api-reference/job/cancel-job"
