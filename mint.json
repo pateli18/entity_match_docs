@@ -15,16 +15,16 @@
       "to": "#fb5672"
     }
   },
-  "openapi": "https://app.entitymatcher.com/api/v1/openapi.json",
+  "openapi": "https://app.getaugerdata.com/api/v1/openapi.json",
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:support@entitymatcher.com"
+      "url": "mailto:support@getaugerdata.com"
     }
   ],
   "topbarCtaButton": {
     "name": "App",
-    "url": "https://www.entitymatcher.com"
+    "url": "https://www.getaugerdata.com"
   },
   "navigation": [
     {

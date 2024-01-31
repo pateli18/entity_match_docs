@@ -7,7 +7,7 @@ page = 1
 data = []
 while page is not None:
     response = requests.get(
-        f"https://app.entitymatcher.com/api/v1/{job_type}/all/{job_id}?page={page}",
+        f"https://app.getaugerdata.com/api/v1/{job_type}/all/{job_id}?page={page}",
         headers={"Authorization": "Bearer xxxxx"},
     )
     response.raise_for_status()
