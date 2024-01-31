@@ -1,0 +1,34 @@
+---
+title: 'De-Duplicate Dataset'
+description: 'Automatically de-duplicate your messy data'
+---
+
+### 1. Create a Dataset
+
+<Snippet file="app-create-dataset.mdx" />
+
+Your dataset should only include the fields relevant for de-duplication (this can be multiple fields), you can either edit the dataset before uploading or select the specific fields in the `Advanced Settings` section of the upload form.
+
+<Frame caption="Select fields">
+  <img src="/screenshots/app/dataset_fields.png" alt="Select specific fields from the dataset" />
+</Frame>
+
+### 2. Start a Match Job
+
+<Snippet file="app-start-job.mdx" />
+
+<Frame caption="Start Match Job">
+  <img src="/screenshots/app/match_job.png" alt="Start a match job" />
+</Frame>
+
+1. Select `New Job`
+1. Select `Match`
+1. Enter a name for your job - this can be anything you want
+1. Select the `dataset` you added in the previous step from the dropdown for both `Base Dataset` and `Match Dataset`
+1. If you want to give the app specific guidance, enter it into the `Instructions` box. While not necessary, this can help guide the app to de-duplicate your data more accurately.
+
+### 3. Exporting Your Duplicate Ids
+
+<Snippet file="app-job-progress.mdx" />
+
+Once the match job is complete, you can click the `Export Data` button to get the duplicate record ids in a CSV file.
