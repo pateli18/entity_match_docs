@@ -33,7 +33,7 @@
     },
     {
       "group": "Tutorials",
-      "pages": ["tutorials/qualitative_data_coding", "tutorials/deduplicate_dataset"]
+      "pages": ["tutorials/cluster_dataset", "tutorials/qualitative_data_coding", "tutorials/deduplicate_dataset"]
     },
     {
       "group": "Match",
