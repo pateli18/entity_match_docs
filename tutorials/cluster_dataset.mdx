@@ -1,0 +1,29 @@
+---
+title: 'Cluster Dataset'
+description: 'Automatically cluster your messy data'
+---
+
+### 1. Create a Dataset
+
+<Snippet file="app-create-dataset.mdx" />
+
+### 2. Start a Ca Job
+
+<Snippet file="app-start-job.mdx" />
+
+<Frame caption="Start Categorize Job">
+  <img src="/screenshots/app/categorize_job.png" alt="Start a categorize job" />
+</Frame>
+
+1. Select `New Job`
+1. Select `Categorize`
+1. Enter a name for your job - this can be anything you want
+1. Select the `Dataset` you added in the previous step from the dropdown
+1. In the `Categories` section, click the `Auto Determine` button. This will open up a panel where you can provide instructions and the system can automatically generate clusters for you. Alternatively, you can enter the specific clusters for your job in the `Categories` input field. You can enter multiple clusters at once by separating them with a `|` character.
+1. If you want to give the app specific guidance when determining which record belongs in which cluster(s), click `Edit` on the `Instructions` box. While not strictly necessary, this can help guide the app to cluster your data more accurately.
+
+### 3. Exporting Your Clusters
+
+<Snippet file="app-job-progress.mdx" />
+
+Once the categorize job is complete, you can click the `Export Data` button to get the corresponding cluster values in a CSV file.
